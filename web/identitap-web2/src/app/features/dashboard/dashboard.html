@@ -1,0 +1,40 @@
+<div class="dashboard-page">
+  <header class="page-heading">
+    <div>
+      <p class="eyebrow">Resumen familiar</p>
+      <h2>Hola, {{ userName }} <span aria-hidden="true">👋</span></h2>
+      <p>Consulta de un vistazo el expediente de Don José y el estado de su pulsera.</p>
+    </div>
+    <div class="profile-chip"><span aria-hidden="true">{{ userName.charAt(0).toUpperCase() }}</span><strong>{{ userName }}</strong></div>
+  </header>
+
+  <section class="dashboard-banner">
+    <div>
+      <p class="eyebrow">Accesorio IdentiTap</p>
+      <h3>Todo listo para cuidar lo importante.</h3>
+      <p>La pulsera está activa y la información esencial se encuentra protegida.</p>
+    </div>
+    <span class="bracelet-icon" aria-hidden="true">◉</span>
+  </section>
+
+  <div class="metrics-grid">
+    <article class="metric-card status-card">
+      <span class="metric-icon">◉</span>
+      <p>Estado de la pulsera</p>
+      <h3>Activa</h3>
+      <small>Última lectura: Hoy, 08:30 AM</small>
+    </article>
+    <article class="metric-card">
+      <span class="metric-icon">▣</span>
+      <p>Archivos en bóveda</p>
+      <h3>8 archivos</h3>
+      <small class="warning">1 documento requiere atención</small>
+    </article>
+    <article class="metric-card">
+      <span class="metric-icon">☷</span>
+      <p>Trámites configurados</p>
+      <h3>3 paquetes</h3>
+      <small>Listos para lectura externa</small>
+    </article>
+  </div>
+</div>

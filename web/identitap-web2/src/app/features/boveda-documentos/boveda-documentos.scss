@@ -1,0 +1,23 @@
+.vault-page { max-width: 1120px; margin: auto; }
+.vault-heading { margin-bottom: 1.5rem; }
+.vault-heading h2 { margin: 0; color: #102c53; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+.vault-heading p:last-child { margin: .5rem 0 0; color: #64748b; }
+.page-heading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.eyebrow { margin: 0 0 .5rem; color: #0878f9; font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.upload-button { min-height: 3rem; padding: 0 1.2rem; border: 0; border-radius: .75rem; background: #0878f9; color: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+.vault-info { display: flex; gap: .8rem; align-items: flex-start; margin-bottom: 1rem; padding: 1rem 1.2rem; border-radius: .9rem; background: #eaf3ff; color: #334155; }
+.vault-info span { display: grid; place-items: center; flex: 0 0 1.5rem; height: 1.5rem; border-radius: 50%; background: #0878f9; color: #fff; font-weight: 800; }
+.vault-info p { margin: 0; line-height: 1.5; }
+.document-list { overflow: hidden; border: 1px solid #d4e4f5; border-radius: 1rem; background: #fff; }
+.document-row { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.25rem; border-bottom: 1px solid #e6eef7; }
+.document-row:last-child { border-bottom: 0; }
+.file-icon { display: grid; place-items: center; flex: 0 0 2.6rem; height: 2.6rem; border-radius: .7rem; background: #eaf3ff; color: #0878f9; font-size: .7rem; font-weight: 800; }
+.file-icon.empty { background: #d7f3e9; color: #16836b; font-size: 1.3rem; }
+.document-row div { flex: 1; min-width: 0; }
+.document-row strong, .document-row small { display: block; }
+.document-row strong { color: #102c53; }
+.document-row small { margin-top: .25rem; color: #64748b; }
+.document-status { padding: .35rem .65rem; border-radius: 2rem; font-size: .78rem; font-weight: 800; }
+.ready { background: #d7f3e9; color: #14634f; }
+.pending { background: #fff4d6; color: #9a6700; }
+@media (max-width: 600px) { .page-heading { align-items: flex-start; flex-direction: column; } .upload-button { width: 100%; } .document-row { align-items: flex-start; flex-wrap: wrap; } .document-status { margin-left: 3.6rem; } }

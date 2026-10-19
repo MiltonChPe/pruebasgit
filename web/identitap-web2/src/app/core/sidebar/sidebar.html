@@ -1,0 +1,33 @@
+<div class="sidebar-brand">
+  <img src="/images/Logito.png" alt="Logo de IdentiTap" class="sidebar-logo">
+  <div>
+    <h1>IdentiTap</h1>
+    <p>Panel familiar</p>
+  </div>
+</div>
+
+<nav class="sidebar-nav" aria-label="Navegación principal">
+  <a routerLink="/dashboard" routerLinkActive="active">
+    <span aria-hidden="true">◈</span> Dashboard
+  </a>
+  <a routerLink="/boveda" routerLinkActive="active">
+    <span aria-hidden="true">▣</span> Bóveda de documentos
+  </a>
+  <a routerLink="/tramites" routerLinkActive="active">
+    <span aria-hidden="true">☷</span> Gestor de trámites
+  </a>
+  <a routerLink="/bitacora" routerLinkActive="active">
+    <span aria-hidden="true">◷</span> Accesos recientes
+  </a>
+</nav>
+
+<div class="sidebar-help">
+  <p>¿Se extravió la pulsera?</p>
+  <button type="button">
+    <span aria-hidden="true">!</span> Bloquear NFC
+  </button>
+</div>
+
+<button type="button" class="logout-button" (click)="logout()">
+  <span aria-hidden="true">↪</span> Cerrar sesión
+</button>

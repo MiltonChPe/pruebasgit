@@ -1,0 +1,67 @@
+<div class="bracelet-page">
+  <header class="bracelet-header">
+    <div>
+      <p class="eyebrow">Configuración inicial · Paso 2 de 2</p>
+      <h2>Registra la pulsera IdentiTap</h2>
+      <p>Completa el perfil del adulto mayor para dejar listo su accesorio de seguridad.</p>
+    </div>
+    <div class="progress-card">
+      <span class="progress-icon" aria-hidden="true">◉</span>
+      <div><strong>Perfil pendiente</strong><small>Un último paso para comenzar</small></div>
+    </div>
+  </header>
+
+  <section class="bracelet-card" aria-labelledby="bracelet-title">
+    <div class="card-title">
+      <div>
+        <p class="eyebrow">Datos del beneficiario</p>
+        <h3 id="bracelet-title">Información del adulto mayor</h3>
+      </div>
+      <span class="bracelet-mark" aria-hidden="true">IT</span>
+    </div>
+
+    <form class="bracelet-form">
+      <div class="input-group wide-field">
+        <label for="patient-name">Nombre completo del adulto mayor</label>
+        <input id="patient-name" type="text" placeholder="Nombre de quien usará la pulsera">
+      </div>
+      <div class="input-group">
+        <label for="sex">Sexo</label>
+        <select id="sex"><option>Seleccionar</option><option>Femenino</option><option>Masculino</option><option>Prefiero no decirlo</option></select>
+      </div>
+      <div class="input-group">
+        <label for="birth-date">Fecha de nacimiento</label>
+        <input id="birth-date" type="date">
+      </div>
+      <div class="input-group">
+        <label for="blood-type">Tipo de sangre</label>
+        <select id="blood-type"><option>Seleccionar</option><option>O+</option><option>O-</option><option>A+</option><option>A-</option><option>B+</option><option>AB+</option></select>
+      </div>
+      <div class="input-group">
+        <label for="allergies">Alergias</label>
+        <input id="allergies" type="text" placeholder="Ej. Penicilina o Ninguna">
+      </div>
+      <div class="input-group">
+        <label for="emergency-phone">Número de emergencia</label>
+        <input id="emergency-phone" type="tel" placeholder="Usar celular de la cuenta">
+      </div>
+      <div class="input-group">
+        <label for="relationship">Parentesco</label>
+        <input id="relationship" type="text" placeholder="Ej. Hija, nieto, cuidador">
+      </div>
+      <div class="input-group">
+        <label for="bracelet-code">Código único de la pulsera</label>
+        <input id="bracelet-code" type="text" placeholder="IT-0000-0000">
+      </div>
+    </form>
+
+    <div class="bracelet-note">
+      <span aria-hidden="true">✓</span>
+      <p><strong>Todo listo para proteger lo importante.</strong> Este es un prototipo visual; el registro todavía no está conectado.</p>
+    </div>
+    <div class="bracelet-actions">
+      <button type="button" class="primary-button">Terminar registro</button>
+      <a href="/registro">Volver a los datos de cuenta</a>
+    </div>
+  </section>
+</div>

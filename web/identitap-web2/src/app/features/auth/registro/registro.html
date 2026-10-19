@@ -1,0 +1,65 @@
+<div class="registro-wrapper">
+  <div class="registro-card">
+    <header class="registro-header">
+      <span class="step-label">Paso 1 de 2 · Cuenta segura</span>
+      <h2>Comencemos a cuidar lo importante</h2>
+      <p>Selecciona quién realizará el registro para configurar el perfil de IdentiTap.</p>
+    </header>
+
+    <form class="registro-form">
+      <fieldset class="account-type">
+        <legend>¿Quién realizará el registro?</legend>
+        <label class="choice-card">
+          <input type="radio" name="registrant" checked>
+          <span><strong>Familiar a cargo</strong><small>Yo registraré a un adulto mayor de mi familia.</small></span>
+        </label>
+        <label class="choice-card">
+          <input type="radio" name="registrant">
+          <span><strong>El adulto mayor</strong><small>Registraré mis propios datos y mi pulsera.</small></span>
+        </label>
+      </fieldset>
+
+      <div class="form-grid">
+        <fieldset class="form-section">
+          <legend>Datos de la cuenta</legend>
+          <div class="input-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@correo.com">
+          </div>
+          <div class="input-group">
+            <label for="phone">Celular</label>
+            <input type="tel" id="phone" placeholder="10 dígitos">
+          </div>
+          <div class="input-group">
+            <label for="full-name">Nombre completo</label>
+            <input type="text" id="full-name" placeholder="Ej. María López">
+          </div>
+          <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Crea una contraseña segura">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Confirmación y seguridad</legend>
+          <div class="input-group">
+            <label for="email-code">Código de confirmación</label>
+            <input type="text" id="email-code" placeholder="Código enviado a tu correo">
+          </div>
+          <div class="security-card">
+            <span aria-hidden="true">✓</span>
+            <div>
+              <strong>Tu información queda protegida</strong>
+              <p>Este es un prototipo visual. Las acciones todavía no están conectadas.</p>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-actions">
+        <a class="btn-primario" href="/registro-pulsera">Continuar al perfil</a>
+        <a href="#" class="link-secundario">Ya tengo una cuenta</a>
+      </div>
+    </form>
+  </div>
+</div>
