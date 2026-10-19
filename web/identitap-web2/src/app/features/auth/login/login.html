@@ -1,0 +1,58 @@
+<section class="auth-page">
+  <section class="auth-intro">
+    <div class="auth-logo" aria-label="Espacio reservado para el logo">IT</div>
+    <p class="eyebrow">Cuidado conectado</p>
+    <h1>Tu tranquilidad, siempre contigo.</h1>
+    <p class="intro-copy">Gestiona la información importante de tu familia y mantén la pulsera IdentiTap lista para ayudar cuando más se necesita.</p>
+    <p class="intro-note"><span aria-hidden="true">✓</span> Diseño seguro, claro y pensado para toda la familia</p>
+  </section>
+  
+  <section class="auth-card" aria-labelledby="login-title">
+    <div class="auth-card-heading">
+      <p class="eyebrow">Bienvenido de vuelta</p>
+      <h2 id="login-title">Inicia sesión</h2>
+      <p>Ingresa a tu espacio familiar de IdentiTap.</p>
+    </div>
+ 
+    <form class="auth-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+      <div class="input-group">
+        <label for="login-email">Correo electrónico</label>
+        <input id="login-email" type="email" placeholder="ejemplo@correo.com" formControlName="email"
+          [attr.aria-invalid]="loginForm.controls.email.invalid && (loginForm.controls.email.touched || submitted())">
+        @if (loginForm.controls.email.invalid && (loginForm.controls.email.touched || submitted())) {
+          <small class="field-error">Ingresa un correo electrónico válido.</small>
+        }
+      </div>
+      <div class="input-group">
+        <label for="login-password">Contraseña</label>
+        <div class="password-input">
+          <input id="login-password" [type]="showPassword() ? 'text' : 'password'" placeholder="••••••••" formControlName="password"
+          [attr.aria-invalid]="loginForm.controls.password.invalid && (loginForm.controls.password.touched || submitted())">
+          <button type="button" class="password-toggle" (click)="togglePasswordVisibility()"
+            [attr.aria-label]="showPassword() ? 'Ocultar contraseña' : 'Mostrar contraseña'"
+            [attr.aria-pressed]="showPassword()">
+            {{ showPassword() ? 'Ocultar' : 'Mostrar' }}
+          </button>
+        </div>
+        @if (loginForm.controls.password.invalid && (loginForm.controls.password.touched || submitted())) {
+          <small class="field-error">La contraseña es obligatoria.</small>
+        }
+      </div>
+      <div class="form-options">
+        <label><input type="checkbox"> Recordar sesión</label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+      @if (loginError()) {
+        <p class="form-error" role="alert">{{ loginError() }}</p>
+      }
+      @if (loginMessage()) {
+        <p class="form-success" role="status">{{ loginMessage() }}</p>
+      }
+      <button type="submit" class="primary-button" [disabled]="isSubmitting()">
+        {{ isSubmitting() ? 'Iniciando sesión...' : 'Iniciar sesión' }}
+      </button>
+    </form>
+
+    <p class="auth-footer">¿Aún no tienes una cuenta? <a routerLink="/registro">Crear cuenta</a></p>
+  </section>
+</section>

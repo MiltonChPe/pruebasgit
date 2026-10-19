@@ -1,0 +1,107 @@
+.dashboard-page {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eyebrow {
+  margin: 0 0 .5rem;
+  color: #0878f9;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.page-heading h2 {
+  margin: 0;
+  color: #102c53;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.page-heading p:not(.eyebrow) {
+  margin: .5rem 0 0;
+  color: #64748b;
+}
+
+.profile-chip {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .5rem .75rem;
+  border-radius: 2rem;
+  background: #fff;
+  color: #102c53;
+}
+
+.profile-chip span {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #eaf3ff;
+  color: #0878f9;
+  font-weight: 800;
+}
+
+.dashboard-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1.25rem;
+  background: #102c53;
+  color: #fff;
+}
+
+.dashboard-banner h3 { margin: 0; font-size: 1.5rem; }
+.dashboard-banner p:last-child { margin: .5rem 0 0; color: #c4d7ef; }
+.dashboard-banner .eyebrow { color: #7ec0ff; }
+
+.bracelet-icon {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 1.25rem;
+  color: #7ec0ff;
+  font-size: 2.3rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.metric-card {
+  padding: 1.4rem;
+  border: 1px solid #d4e4f5;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(16, 44, 83, .06);
+}
+
+.status-card { border-top: 4px solid #16836b; }
+.metric-icon { color: #0878f9; font-size: 1.5rem; }
+.metric-card p { margin: 1rem 0 .35rem; color: #64748b; font-size: .88rem; font-weight: 700; }
+.metric-card h3 { margin: 0; color: #102c53; font-size: 1.55rem; }
+.metric-card small { display: block; margin-top: 1rem; color: #64748b; }
+.metric-card .warning { color: #b45309; }
+
+@media (max-width: 760px) {
+  .page-heading { align-items: flex-start; flex-direction: column; }
+  .profile-chip { align-self: flex-end; }
+  .dashboard-banner { padding: 1.25rem; }
+  .metrics-grid { grid-template-columns: 1fr; }
+}

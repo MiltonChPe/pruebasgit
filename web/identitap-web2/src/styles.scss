@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  background: #eaf3ff;
+  color: #334155;
+  font-family: 'Nunito Sans', 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+button, input, select { font-family: inherit; }

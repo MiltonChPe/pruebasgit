@@ -1,0 +1,44 @@
+:host {
+  --navy: #102c53;
+  --electric: #0878f9;
+  --ice: #eaf3ff;
+  --white: #ffffff;
+  --slate: #334155;
+  --security: #16836b;
+  display: block;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  background: var(--ice);
+  color: var(--slate);
+}
+
+.app-sidebar {
+  width: 272px;
+  flex: 0 0 272px;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.app-content {
+  flex: 1;
+  min-width: 0;
+  padding: 2.5rem clamp(1rem, 4vw, 4rem);
+  overflow-x: hidden;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    display: block;
+  }
+
+  .app-sidebar {
+    width: 100%;
+  }
+
+  .app-content {
+    padding: 1.25rem 1rem 2rem;
+  }
+}
